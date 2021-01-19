@@ -47,5 +47,3 @@ function showSlides(slides,slideIndex){
     if (slideIndex < 1) {slideIndex = slides.length};
     slides[slideIndex-1].style.display = "block";  
 }
-
-/*trying github*/
