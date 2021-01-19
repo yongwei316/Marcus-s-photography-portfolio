@@ -1,0 +1,283 @@
+body{
+    background-image: url(https://static.wixstatic.com/media/716629_f6dfb6f3b50e4514902359cbaa45b72a~mv2.jpg/v1/fill/w_1432,h_952,al_c,q_85,usm_0.66_1.00_0.01/portfolio%20final.webp);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:0;
+    margin:0;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+#firstpage{
+    height: 100vh;
+    position: relative;
+    padding:0;
+    margin:0;
+    border:none;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+#navbar{
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    width: 100%;
+    background-color: rgb(2, 2, 2,0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container{
+    list-style-type: none;
+    display: flex;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 10px;
+}
+.nav-link:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+    color: black;
+}
+#home{
+    margin:0;
+    border:0;
+    top: 0;
+    left: 0;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.icon {
+    width: 10em;
+    height: 15em;
+    margin-top: 35px;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+ .intro-title{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    bottom: 30px;
+    font-size: 79px;
+    font-weight: 0;
+    font-family: din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  }
+
+  .intro-desc{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    bottom: 35px;
+    font-size: 20px;
+    font-family: din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  }
+.contact{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+}
+.contact ul{
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    margin-block-end:0;
+}
+.contact li{
+    padding: 20px 20px;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+}
+
+.profile-link{
+    position: relative;
+    display: block;
+    top: 0;
+
+}
+.img{
+    height:40px;
+    width: 40px; 
+}
+
+#portfolio{
+    background-color: black;
+    color:white;
+    position: relative;
+}
+#portfolio header{
+    position: relative;
+    font-size :50px;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    margin:5px 0px;
+    padding: 20px 0px;
+    font-weight: 700;
+}
+
+.portfolio-container{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    height: 700px;
+    width: 65vw;
+
+}
+
+.title-container-right{
+    order: 2;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+.title-container-right p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title-container-right a{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.title-container-right a:hover{
+    background-color: black;
+    color: white;
+}
+.photo-container{
+    position: relative;
+    display: flex;
+    order: 1;
+    width: 50%;
+    margin: auto;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.photo{
+    display: flex;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    align-content: center;
+}
+.photo img{
+    margin:0 auto;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 450px;
+    max-height: 700px;
+}
+
+
+.right-arrow {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ5MC44IDQ5MC44IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz4KPHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iIiBkPSJNMTM1LjY4NSwzLjEyOGMtNC4yMzctNC4wOTMtMTAuOTktMy45NzUtMTUuMDgzLDAuMjYyYy0zLjk5Miw0LjEzNC0zLjk5MiwxMC42ODcsMCwxNC44MiAgbDIyNy4xMTUsMjI3LjEzNkwxMjAuNTgxLDQ3Mi40NjFjLTQuMjM3LDQuMDkzLTQuMzU0LDEwLjg0NS0wLjI2MiwxNS4wODNjNC4wOTMsNC4yMzcsMTAuODQ1LDQuMzU0LDE1LjA4MywwLjI2MiAgYzAuMDg5LTAuMDg2LDAuMTc2LTAuMTczLDAuMjYyLTAuMjYybDIzNC42NjctMjM0LjY2N2M0LjE2NC00LjE2NSw0LjE2NC0xMC45MTcsMC0xNS4wODNMMTM1LjY4NSwzLjEyOHoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiNmNDQzMzYiIGNsYXNzPSIiPjwvcGF0aD4KPHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJNMTI4LjEzMyw0OTAuNjhjLTUuODkxLDAuMDExLTEwLjY3NS00Ljc1Ny0xMC42ODYtMTAuNjQ4Yy0wLjAwNS0yLjg0LDEuMTIzLTUuNTY1LDMuMTM0LTcuNTcxbDIyNy4xMzYtMjI3LjExNSAgTDEyMC41ODEsMTguMjMyYy00LjE3MS00LjE3MS00LjE3MS0xMC45MzMsMC0xNS4xMDRjNC4xNzEtNC4xNzEsMTAuOTMzLTQuMTcxLDE1LjEwNCwwbDIzNC42NjcsMjM0LjY2NyAgYzQuMTY0LDQuMTY1LDQuMTY0LDEwLjkxNywwLDE1LjA4M0wxMzUuNjg1LDQ4Ny41NDRDMTMzLjY4NSw0ODkuNTUxLDEzMC45NjcsNDkwLjY4LDEyOC4xMzMsNDkwLjY4eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-color: transparent;
+    background-position: 50% 50%;
+    /* put the height and width of your image here */
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    height: 50px;
+    width:50px;
+    border: none;
+    outline:none;
+    opacity: 0;
+  }
+.right-arrow:hover{
+    opacity: 0.5;
+}
+
+.left-arrow {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ5MC43ODcgNDkwLjc4NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9IiIgZD0iTTM2Mi42NzEsNDkwLjc4N2MtMi44MzEsMC4wMDUtNS41NDgtMS4xMTUtNy41NTItMy4xMTVMMTIwLjQ1MiwyNTMuMDA2ICBjLTQuMTY0LTQuMTY1LTQuMTY0LTEwLjkxNywwLTE1LjA4M0wzNTUuMTE5LDMuMjU2YzQuMDkzLTQuMjM3LDEwLjg0NS00LjM1NCwxNS4wODMtMC4yNjJjNC4yMzcsNC4wOTMsNC4zNTQsMTAuODQ1LDAuMjYyLDE1LjA4MyAgYy0wLjA4NiwwLjA4OS0wLjE3MywwLjE3Ni0wLjI2MiwwLjI2MkwxNDMuMDg3LDI0NS40NTRsMjI3LjEzNiwyMjcuMTE1YzQuMTcxLDQuMTYsNC4xNzksMTAuOTE0LDAuMDE5LDE1LjA4NSAgQzM2OC4yMzYsNDg5LjY2NCwzNjUuNTExLDQ5MC43OTIsMzYyLjY3MSw0OTAuNzg3eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iI2Y0NDMzNiIgY2xhc3M9IiI+PC9wYXRoPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Ik0zNjIuNjcxLDQ5MC43ODdjLTIuODMxLDAuMDA1LTUuNTQ4LTEuMTE1LTcuNTUyLTMuMTE1TDEyMC40NTIsMjUzLjAwNmMtNC4xNjQtNC4xNjUtNC4xNjQtMTAuOTE3LDAtMTUuMDgzTDM1NS4xMTksMy4yNTYgIGM0LjA5My00LjIzNywxMC44NDUtNC4zNTQsMTUuMDgzLTAuMjYyYzQuMjM3LDQuMDkzLDQuMzU0LDEwLjg0NSwwLjI2MiwxNS4wODNjLTAuMDg2LDAuMDg5LTAuMTczLDAuMTc2LTAuMjYyLDAuMjYyICBMMTQzLjA4NywyNDUuNDU0bDIyNy4xMzYsMjI3LjExNWM0LjE3MSw0LjE2LDQuMTc5LDEwLjkxNCwwLjAxOSwxNS4wODVDMzY4LjIzNiw0ODkuNjY0LDM2NS41MTEsNDkwLjc5MiwzNjIuNjcxLDQ5MC43ODd6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-color: transparent;
+    background-position: 50% 50%;
+    /* put the height and width of your image here */
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 50px;
+    width:50px;
+    border: none;
+    outline:none;
+    opacity: 0;
+}
+
+.left-arrow:hover{
+    opacity: 0.5;
+}
+
+
+
