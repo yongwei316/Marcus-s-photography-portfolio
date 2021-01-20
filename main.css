@@ -99,6 +99,8 @@ a{
     border: 0;
     position: relative;
     bottom: 30px;
+    justify-content: center;
+    text-align: center;
     font-size: 79px;
     font-weight: 0;
     font-family: din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
@@ -168,13 +170,18 @@ a{
     flex-wrap: wrap;
     flex-direction: row;
     margin: auto;
-    height: 700px;
+    height: auto;
     width: 65vw;
 
 }
 
-.title-container-right{
-    order: 2;
+.right{
+    flex-direction: row;
+}
+.left{
+    flex-direction: row-reverse;
+}
+.title-container{
     width: 400px;
     height: 200px;
     margin: auto;
@@ -185,7 +192,7 @@ a{
     background-color: black;
 }
 
-.title-container-right p{
+.title-container p{
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -193,7 +200,7 @@ a{
     font-weight: bold;
 }
 
-.title-container-right a{
+.title-container a{
     background-color: white;
     color: black;
     font-weight: bold;
@@ -202,14 +209,13 @@ a{
     margin-top: 30px;
 }
 
-.title-container-right a:hover{
+.title-container a:hover{
     background-color: black;
     color: white;
 }
 .photo-container{
     position: relative;
     display: flex;
-    order: 1;
     width: 50%;
     margin: auto;
     height: 700px;

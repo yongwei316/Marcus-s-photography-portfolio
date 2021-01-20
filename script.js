@@ -46,7 +46,19 @@ function showSlides(slides,slideIndex){
     if (slideIndex > slides.length) {slideIndex = 1} ;
     if (slideIndex < 1) {slideIndex = slides.length};
     slides[slideIndex-1].style.display = "block";  
-    setTimeout(function(){
-        showSlides(slides,slideIndex)},3000);
+    setTimeout(function(){showSlides(slides,slideIndex)},3000);
 }
 
+function plusSlide(n){
+    clearInterval(myTimer);
+    if(n<0){
+        showSlide(slideIndex-=1);
+    }else{
+        showSlide(slideIndex+=1);
+    }
+    if (n === -1){
+        setInterval(function(){plusSlide(n + 2);}, 3000);
+      } else {
+        setInterval(function(){plusSlide(n + 1);}, 3000);
+      }
+}
