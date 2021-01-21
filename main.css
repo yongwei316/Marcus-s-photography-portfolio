@@ -170,9 +170,11 @@ a{
     flex-wrap: wrap;
     flex-direction: row;
     margin: auto;
+    margin-bottom: 50px;
     height: auto;
     width: 65vw;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .right{
@@ -182,9 +184,9 @@ a{
     flex-direction: row-reverse;
 }
 .title-container{
-    width: 400px;
+    width: 360px;
     height: 200px;
-    margin: auto;
+    margin: auto 10px;
     align-items: stretch;
     justify-content: center;
     align-items: center;
@@ -216,8 +218,8 @@ a{
 .photo-container{
     position: relative;
     display: flex;
-    width: 50%;
-    margin: auto;
+    width: 40%;
+    margin: auto 10px;
     height: 700px;
     justify-content: center;
     align-items: center;
@@ -239,8 +241,8 @@ a{
     align-items: center;
     justify-content: center;
     align-content: center;
-    width: 450px;
-    max-height: 700px;
+    width: 380px;
+    max-height: 600px;
 }
 
 
