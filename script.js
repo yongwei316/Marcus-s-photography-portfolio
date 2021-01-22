@@ -32,33 +32,31 @@ function showSlide(n){
 }*/
 
 var slideshowContainers = document.getElementsByClassName("photo-container");
+var slideIndex = [1,1,1,1,1];
+var myTimer=[];
 for(let i=0;i<slideshowContainers.length;i++){
     var slides = slideshowContainers[i].querySelectorAll('.photo');
-    var slideIndex = 1;
-    showSlides(slides,slideIndex);
+    showSlides(slides,i);
+    plusSlide(1,i);
 }
 
-function showSlides(slides,slideIndex){
+function showSlides(slides,index){
     for(let i=0;i<slides.length;i++){
         slides[i].style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1} ;
-    if (slideIndex < 1) {slideIndex = slides.length};
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(function(){showSlides(slides,slideIndex)},3000);
+    if (slideIndex[index] > slides.length) {slideIndex[index] = 1} ;
+    if (slideIndex[index] < 1) {slideIndex[index] = slides.length};
+    slides[slideIndex[index]-1].style.display = "block";  
 }
 
-function plusSlide(n){
-    clearInterval(myTimer);
+function plusSlide(n, index){
+    clearTimeout(myTimer[index]);
+    var slides = slideshowContainers[index].querySelectorAll('.photo');
     if(n<0){
-        showSlide(slideIndex-=1);
+        slideIndex[index]-=1;
     }else{
-        showSlide(slideIndex+=1);
+        slideIndex[index]+=1;
     }
-    if (n === -1){
-        setInterval(function(){plusSlide(n + 2);}, 3000);
-      } else {
-        setInterval(function(){plusSlide(n + 1);}, 3000);
-      }
+    showSlides(slides,index);
+    myTimer[index] = setTimeout(function(){plusSlide(slides,index)},3000);
 }
