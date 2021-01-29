@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color: black;
+    height: auto;
+
+    padding:0;
+    margin:0;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+#firstpage{
+    height: 100vh;
+    position: relative;
+    padding:0;
+    margin:0;
+    border:none;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+#navbar{
+    position: relative;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    width: 100%;
+    background-color: rgb(2, 2, 2,0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container{
+    list-style-type: none;
+    display: flex;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 10px;
+}
+.nav-link:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+    color: black;
+}
+#home{
+    margin:0;
+    border:0;
+    top: 0;
+    left: 0;
+}
+
+.title{
+    display: block;
+    align-items: center;
+    color: white;
+    padding: 0;
+    border: 0;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.photo-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.small{
+    float: left;
+    width:  500px;
+    height: 600px;
+    object-fit: cover;
+    padding :5px;
+}
+
+.large{
+    float: left;
+    width:  1000px;
+    height: 600px;
+    object-fit: cover;
+    padding :5px;
+}
+
+.medium{
+    float: left;
+    width:  750px;
+    height: 600px;
+    object-fit: cover;
+    padding :5px;
+}
+
+.superlarge{
+    float: left;
+    width:  1500px;
+    height: 1000px;
+    object-fit: cover;
+    padding :5px;
+}
